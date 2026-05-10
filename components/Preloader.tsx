@@ -4,28 +4,22 @@ import { useEffect, useState } from "react";
 
 export default function Preloader() {
     const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        const scrollY = window.scrollY;
 
-        document.body.style.position = "fixed";
-        document.body.style.top = `-${scrollY}px`;
-        document.body.style.width = "100%";
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
 
         const timer = setTimeout(() => {
-            document.body.style.position = "";
-            document.body.style.top = "";
-            document.body.style.width = "";
-
-            window.scrollTo(0, scrollY);
             setIsLoading(false);
+
+            document.body.style.overflow = "auto";
+            document.documentElement.style.overflow = "auto";
         }, 2000);
 
         return () => {
             clearTimeout(timer);
-
-            document.body.style.position = "";
-            document.body.style.top = "";
-            document.body.style.width = "";
+            document.body.style.overflow = "auto";
+            document.documentElement.style.overflow = "auto";
         };
     }, []);
 
