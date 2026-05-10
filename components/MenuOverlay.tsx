@@ -93,14 +93,14 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                             rel="noopener noreferrer"
                             className="block text-2xl font-bold transition hover:scale-105 md:text-3xl"
                         >
-                            hello@example.com
+                            nirajmaharjan783@gmail.com
                         </a>
 
                         <a
                             href="tel:+9779800000000"
                             className="mt-3 block text-2xl font-bold transition hover:scale-105 md:text-3xl"
                         >
-                            +977 9800000000
+                            +977 9808809784
                         </a>
                     </div>
 
@@ -111,7 +111,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
 
                         <div className="flex flex-wrap gap-4 text-sm uppercase tracking-wider text-[var(--muted)]">
                             <a
-                                href="https://www.linkedin.com/in/yourusername"
+                                href="https://www.linkedin.com/in/niraj-maharjan-7256772b5"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="transition hover:scale-125 hover:text-[var(--foreground)]"
@@ -120,7 +120,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                             </a>
 
                             <a
-                                href="https://www.instagram.com/yourusername"
+                                href="https:www.instagram.com/nirajmaharjan783"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="transition hover:scale-125 hover:text-[var(--foreground)]"
@@ -129,7 +129,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                             </a>
 
                             <a
-                                href="https://github.com/yourusername"
+                                href="https://github.com/nirajmaharjan783"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="transition hover:scale-125 hover:text-[var(--foreground)]"
