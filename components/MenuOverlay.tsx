@@ -120,7 +120,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                             </a>
 
                             <a
-                                href="https:www.instagram.com/nirajmaharjan783"
+                                href="https://www.instagram.com/nirajmaharjan783"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="transition hover:scale-125 hover:text-[var(--foreground)]"

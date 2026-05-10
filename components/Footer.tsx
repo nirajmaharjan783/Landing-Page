@@ -48,7 +48,7 @@ export default function Footer() {
                                 LinkedIn
                             </a>
                             <a
-                                href="https:www.instagram.com/nirajmaharjan783"
+                                href="https://www.instagram.com/nirajmaharjan783"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="transition hover:scale-150 hover:text-[var(--foreground)]"
