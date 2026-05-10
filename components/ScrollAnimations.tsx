@@ -16,13 +16,16 @@ export default function ScrollAnimations() {
             let startX = 0;
             let startY = 80;
 
+            // Mobile fix
+            const isMobile = window.innerWidth < 768;
+
             if (direction === "left") {
-                startX = -120;
+                startX = isMobile ? -40 : -120;
                 startY = 0;
             }
 
             if (direction === "right") {
-                startX = 120;
+                startX = isMobile ? 40 : 120;
                 startY = 0;
             }
 
