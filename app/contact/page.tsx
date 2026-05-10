@@ -1,8 +1,50 @@
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ContactPage() {
-    return (
-        <div className="min-h-screen flex items-center justify-center px-6">
 
+    const router = useRouter();
+
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, []);
+
+    const goHome = () => {
+        router.push("/");
+    };
+
+    return (
+        <div className="min-h-screen relative flex items-center justify-center px-6">
+
+            {/* TOP BAR */}
+            <div className="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-5">
+
+                {/* LEFT BRAND */}
+                <button
+                    onClick={goHome}
+                    className="text-xl font-bold tracking-tight"
+                >
+                    WILDSTUDIO<span className="text-xs align-super">®</span>
+                </button>
+
+                {/* CLOSE */}
+                <button
+                    onClick={goHome}
+                    className="rounded-full border border-[var(--border)] px-5 py-2 text-sm uppercase tracking-wider transition hover:bg-[var(--foreground)] hover:text-[var(--background)]"
+                >
+                    Close
+                </button>
+
+            </div>
+
+
+            {/* 📄 CONTENT */}
             <div className="text-center space-y-8">
 
                 <h1 className="text-5xl font-bold tracking-tight">
@@ -34,10 +76,11 @@ export default function ContactPage() {
                 </div>
 
                 <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=nirajmaharjan783@gmail.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=nirajmaharjan78@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 rounded-full border border-[var(--border)] px-6 py-3 uppercase tracking-wider text-sm transition hover:bg-[var(--foreground)] hover:text-[var(--background)]">
+                    className="mt-6 inline-block rounded-full border border-[var(--border)] px-6 py-3 uppercase tracking-wider text-sm transition hover:bg-[var(--foreground)] hover:text-[var(--background)]"
+                >
                     Send Message
                 </a>
 
