@@ -97,9 +97,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                         </a>
 
                         <a
-                            href="tel:+9779808809784"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="/contact"
                             className="mt-3 block text-2xl font-bold transition hover:scale-105 md:text-3xl"
                         >
                             +977 9808809784
