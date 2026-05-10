@@ -17,12 +17,12 @@ export default function ScrollAnimations() {
             let startY = 80;
 
             if (direction === "left") {
-                startX = -120;
+                startX = -300;
                 startY = 0;
             }
 
             if (direction === "right") {
-                startX = 120;
+                startX = 300;
                 startY = 0;
             }
 

@@ -45,9 +45,10 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
 
     return (
         <div
-            className={`fixed inset-0 z-[9998] overflow-y-auto bg-[var(--background)] px-6 py-8 text-[var(--foreground)] transition duration-500 md:px-12 ${isOpen
-                ? "pointer-events-auto translate-y-0 opacity-100"
-                : "pointer-events-none -translate-y-full opacity-0"
+            className={`fixed inset-0 z-[9998] overflow-y-auto bg-[var(--background)] px-6 py-8 text-[var(--foreground)] transition duration-500 md:px-12 
+                ${isOpen
+                    ? "pointer-events-auto translate-y-0 opacity-100"
+                    : "pointer-events-none -translate-y-full opacity-0"
                 }`}
         >
             <div className="flex items-center justify-between">

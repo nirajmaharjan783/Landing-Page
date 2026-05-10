@@ -8,7 +8,7 @@ export default function Preloader() {
     useEffect(() => {
         const timer = window.setTimeout(() => {
             setIsLoading(false);
-        }, 1800);
+        }, 2000);
 
         return () => {
             window.clearTimeout(timer);
@@ -27,7 +27,7 @@ export default function Preloader() {
                 </div>
 
                 <p className="mt-4 text-sm uppercase tracking-[0.5em] text-[var(--muted)]">
-                    Loading
+                    Loading...
                 </p>
             </div>
         </div>

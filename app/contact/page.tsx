@@ -49,6 +49,7 @@ export default function ContactPage() {
 
                 <h1 className="text-5xl font-bold tracking-tight">
                     Let&apos;s work together
+
                 </h1>
 
                 <p className="text-[var(--muted)] text-lg">

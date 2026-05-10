@@ -21,24 +21,31 @@ export default function AboutSection() {
     return (
         <section id="about" className="px-6 py-24 md:px-12">
             <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr]">
-                <p className="text-sm uppercase tracking-[0.4em] text-[var(--muted)]">
+                <p
+                    data-direction="left"
+                    className="reveal text-sm uppercase tracking-[0.4em] text-[var(--muted)]">
                     Who we are
                 </p>
 
                 <div>
-                    <h2 className="text-4xl font-bold leading-tight md:text-6xl">
+                    <h2
+                        data-direction="right"
+                        className="reveal text-4xl font-bold leading-tight md:text-6xl">
                         We craft digital identities that turn ordinary brands into memorable
                         online experiences.
                     </h2>
 
-                    <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
+                    <p
+                        data-direction="right"
+                        className="reveal mt-8 max-w-3xl text-lg leading-8 text-[var(--muted)]">
                         Our team combines design, technology, and storytelling to build
                         websites that feel premium, fast, and visually powerful.
                     </p>
 
-                    <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="reveal mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                         {stats.map((stat) => (
                             <div
+                                data-direction="right"
                                 key={stat.label}
                                 className="rounded-[2rem] border border-[var(--border)] p-6"
                             >
